@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>COMPUTACIONSECCION1</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        <style>
+
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import  "compass/css3";
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: crimson;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: ivory;
+}
+
+.navigation a:hover {
+  background: crimson(white, 86%);
+}
+
+@media  all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media  all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            html, body {
+                background-color: ivory;
+                color: black;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+                height: 30vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-star {
+                align-items: start;
+                display: flex ;
+                justify-content: start;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: start;
+            }
+
+            .title {
+                font-size: 44px;
+            }
+
+            .links > a {
+                color: dodgerblue;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+        
+ }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+
+
+
+
+
+
+
+    
+    
+  
+
+
+a:hover {
+  background-color: maroon;
+}
+
+
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.three-column {
+
+  padding: 1em;
+
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+
+
+
+
+
+<div class="progress">
+
+  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+
+
+
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>
+
+
+ 
+
+<ul class="navigation">
+  <li><a href="https://agile-savannah-22396.herokuapp.com/projects">projects</a></li>
+  <li><a href="https://agile-savannah-22396.herokuapp.com/about">About</a></li>
+  <li><a href="https://agile-savannah-22396.herokuapp.com/products">product</a></li>
+  <li><a href="https://agile-savannah-22396.herokuapp.com/contact">Contact</a></li>
+    <li><a href="https://agile-savannah-22396.herokuapp.com/paypalsdk">paypalsdk</a></li>
+        <li><a href="https://agile-savannah-22396.herokuapp.com/stripe">stripe</a></li>
+
+
+</ul>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 class="text-hide">curso computacionmsección1</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bg-info clearfix">
+  <button type="button" class="btn btn-secondary float-left">THANK GOD FOR LIFE </button>
+  <button type="button" class="btn btn-secondary float-right">Welcome to laravelsite</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="full-height">
+                            <div class="top-right links">
+                                            <a href="https://agile-savannah-22396.herokuapp.com/login">Login</a>
+                        <a href="https://agile-savannah-22396.herokuapp.com/register">Register</a>
+                                    </div>
+            
+        
+
+
+
+
+
+            <div class="flex-star content">
+                <div class="title m-b-md">
+                    
+                </div>
+
+                <div class="links">
+                     <a href="https://agile-savannah-22396.herokuapp.com/download">download</a>
+                     <a href="https://agile-savannah-22396.herokuapp.com/technologies">technologies</a>
+                     <a href="https://agile-savannah-22396.herokuapp.com/shoopingcart">shoopingcart</a>
+                     <a href="https://agile-savannah-22396.herokuapp.com/blog">blog</a>
+                     
+              
+              
+              
+              
+                  
+
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+              
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+<div class="three-column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut 
+
+
+
+
+          <img class="d-block img-fluid" src="https://lh3.googleusercontent.com/-Kw0mhxdFt2I/W2ON4BvZrNI/AAAAAAAAD5I/qu0cqn7ZqzQlk9sOC7VtBXo2--_Spu2PACL0BGAYYCw/h856/2018-08-02.png">
+
+
+
+
+
+ aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+
+  
+
+ 
+ </div>
+
+ 
+  
+ 
+
+
+
+
+ 
+<div class="three-column">
+
+            <img class="d-block img-fluid" src="c:Users/santiaga/miweb/Left-Aligned%20Text%20Twitter%20Post%20(1).png">
+
+  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut 
+
+
+
+
+
+
+aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed 
+ 
+   ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget                  <img class="d-block img-fluid" src="c:Users/santiaga/miweb/Left-Aligned%20Text%20Twitter%20Post%20(1).png">
+      tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+
+
+  
+  
+
+ </div>
+
+
+
+
+
+<div class="three-column">
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut 
+
+
+aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at 
+
+          <img class="d-block img-fluid" src="c:/Users/santiaga/miweb/laravel.jpg">
+
+
+libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
